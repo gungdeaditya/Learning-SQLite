@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gungdeaditya.samplesqliteapps.view.NewContactActivity"
+    tools:showIn="@layout/activity_new_contact">
+
+    <EditText
+        android:id="@+id/name_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="Contact Name"
+        android:inputType="text"
+        android:textColorHint="#B6B6B6"
+        android:textColor="#fff">
+        </EditText>
+
+    <EditText
+        android:id="@+id/number_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:layout_marginTop="15dp"
+        android:hint="Mobile Number"
+        android:textColorHint="#B6B6B6"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/email_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:hint="Email Address"
+        android:textColorHint="#B6B6B6"
+        android:textColor="#fff"/>
+
+    <Button
+        android:onClick="addContact"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:elevation="6dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Save"
+        />
+
+</LinearLayout>
